@@ -56,7 +56,7 @@ function print () {
 }
 
 clear &&
-print '\n🚀 ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers + Docker Setup\nCompatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server)\n⚠️ Ubuntu 20.04.x is no longer supported\n'
+print '\n🚀 ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers + Docker Setup\nCompatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server)\n\n⚠️ Ubuntu 20.04.x is no longer supported\n'
 print '\nUbuntu OS Update ...\n'
 
 sudo apt-get update
