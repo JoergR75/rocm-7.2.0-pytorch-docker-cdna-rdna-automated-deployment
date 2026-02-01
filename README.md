@@ -5,7 +5,7 @@
 [![Docker](https://img.shields.io/badge/Docker-29.2.0-blue?logo=docker)](https://www.docker.com/)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2024.04-e95420?logo=ubuntu)](https://ubuntu.com/download/server)
 [![AMD Radeon AI PRO R9700](https://img.shields.io/badge/AMD-Radeon(TM)%20AI%20PRO%20R9700-8B0000?logo=amd)](https://www.amd.com/en/products/graphics/workstations/radeon-ai-pro/ai-9000-series/amd-radeon-ai-pro-r9700.html)
-[![AMD CDNA MI300 Series](https://img.shields.io/badge/AMD-CDNA%20INSTINCT%20MI300%20Series-8B0000?logo=amd)](https://www.amd.com/en/technologies/cdna.html)
+[![AMD CDNA MI300 Series](https://img.shields.io/badge/AMD-CDNA%20Instint%20MI300%20Series-8B0000?logo=amd)](https://www.amd.com/en/technologies/cdna.html)
 
 
 ## 📌 Overview
