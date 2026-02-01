@@ -219,7 +219,7 @@ The script sets up a Docker environment with GPU passthrough support via ROCm.
 
 Check Docker Installation
 ```bash
-docker --version
+docker -v
 ```
 <img width="571" height="39" alt="image" src="https://github.com/user-attachments/assets/54babcd1-42ef-4af6-9dda-14aa8b7cfa21" />
 
@@ -236,7 +236,7 @@ sudo docker pull rocm/vllm-dev:rocm7.2_navi_ubuntu22.04_py3.10_pytorch_2.9_vllm_
 
 <img width="904" height="611" alt="image" src="https://github.com/user-attachments/assets/115f8e53-5957-4670-a6fa-8815131837f8" />
 
-Further vLLM Docker versions for RDNA 4 can be verified on Docker Hub:  
+Further vLLM Docker versions for RDNA4 can be verified on Docker Hub:  
 https://hub.docker.com/r/rocm/vllm-dev/tags?name=navi
 
 or for **CDNA** architecture
@@ -244,14 +244,14 @@ or for **CDNA** architecture
 sudo docker pull rocm/vllm:latest
 ```
 
-Run vLLM with all available AMD GPU Access (example for RDNA4)
+Run vLLM with all available AMD GPU access (example for RDNA4)
 ```bash
 sudo docker run -it \
     --device=/dev/kfd \
     --device=/dev/dri \
     --security-opt seccomp=unconfined \
     --group-add video \
-    rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
+    rocm/vllm-dev:rocm7.2_navi_ubuntu22.04_py3.10_pytorch_2.9_vllm_0.14.0rc0
 ```
 With `rocm-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
 
