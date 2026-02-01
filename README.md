@@ -4,6 +4,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0%20%28Preview%29-ee4c2c?logo=pytorch)](https://pytorch.org/get-started/locally/)
 [![Docker](https://img.shields.io/badge/Docker-29.2.0-blue?logo=docker)](https://www.docker.com/)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2024.04-e95420?logo=ubuntu)](https://ubuntu.com/download/server)
+![AMD Radeon AI PRO R9700](https://img.shields.io/badge/AMD-Radeon%20AI%20PRO%20R9700-red?logo=amd)
 
 ## 📌 Overview
 The script provisions a fully automated, non-interactive AMD GPU software development environment for AI and HPC software engineering on **Ubuntu 22.04** and **24.04**, centered on **ROCm 7.2.0** and **PyTorch** Preview Nightly.
