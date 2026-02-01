@@ -134,7 +134,8 @@ rocm-smi --showprofile
 ```
 
 The star (*) marks the current profile which is set to **BOOTUP DEFAULT**
-<img width="893" height="439" alt="{795FA7F8-D282-49C4-BD05-EBABEAF7274C}" src="https://github.com/user-attachments/assets/870628c2-cd82-4866-b958-d954a804fedf" />
+
+<img width="893" height="429" alt="image" src="https://github.com/user-attachments/assets/10244725-66f6-40d5-9cd7-12ef06f70377" />
 
 Set the GPU to the high-performance / compute-optimized power profile.
 This profile prioritizes sustained clocks and higher power limits, making it well suited for AI inference, training, and other compute-intensive workloads.
@@ -144,7 +145,7 @@ It may increase power consumption but helps ensure consistent performance under 
 rocm-smi --setprofile 4
 ```
 
-<img width="857" height="261" alt="{5617ED67-EC2F-4127-85C3-AA1E0302FD67}" src="https://github.com/user-attachments/assets/ee3b653d-36ed-456c-a596-68b136b3167b" />
+<img width="865" height="243" alt="image" src="https://github.com/user-attachments/assets/fadd6e48-0e51-4464-907a-dd3c656a0a3c" />
 
 ## 📶 ROCm Bandwidth Test
 
