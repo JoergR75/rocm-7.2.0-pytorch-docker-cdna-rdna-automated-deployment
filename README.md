@@ -1,4 +1,4 @@
-# 🧩 ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.12.0 (Preview@ROCm7.1) + Transformers + Docker Setup
+# 🧩 ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.12.0 (Preview Nightly) + Transformers + Docker Setup
 
 [![ROCm](https://img.shields.io/badge/ROCm-7.2.0-ff6b6b?logo=amd)](https://rocm.docs.amd.com/en/docs-7.2.0/about/release-notes.html)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0%20%28nightly%29-ee4c2c?logo=pytorch)](https://pytorch.org/get-started/locally/)
