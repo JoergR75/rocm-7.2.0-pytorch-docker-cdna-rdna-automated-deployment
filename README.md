@@ -38,10 +38,10 @@ If an existing ROCm installation is detected, it removes ROCm and related packag
 
 ## ⚡ Features
 - Automated **ROCm GPU drivers + HIP + OpenCL SDK** installation
-- **PyTorch ROCm nightly** with GPU acceleration
+- **PyTorch ROCm Preview Nightly** with GPU acceleration
 - Preinstalled **Transformers**, **Accelerate**, **Diffusers**, and **Datasets**
 - Integrated **Docker environment** with ROCm GPU passthrough
-- **vLLM Docker images** for **RDNA4** & **CDNA3**
+- **vLLM Docker images** for **RDNA4** & **CDNA**
 - Optimized for **AI workloads**, **LLM inference**, and **model fine-tuning**
 
 ---
