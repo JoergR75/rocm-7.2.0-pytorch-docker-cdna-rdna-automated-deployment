@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # ---------------------------------------------------------------------------------------------------------------
 # This Python script benchmarks the performance of large language models using vLLM on AMD ROCm-compatible GPUs.
 # It measures throughput, latency, and time-to-first-token (TTFT) for different batch sizes when
