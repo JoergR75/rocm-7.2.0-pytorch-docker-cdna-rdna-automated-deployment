@@ -217,7 +217,7 @@ sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
 
 The script sets up a Docker environment with GPU passthrough support via ROCm.
 
-Check Docker Installation
+Check Docker installation and version
 ```bash
 docker -v
 ```
