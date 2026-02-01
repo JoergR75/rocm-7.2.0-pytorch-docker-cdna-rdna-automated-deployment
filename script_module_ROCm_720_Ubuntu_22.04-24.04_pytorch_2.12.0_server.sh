@@ -1,6 +1,6 @@
 #!/bin/bash
 # ================================================================================================================
-# ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.12.0 (nightly for ROCm7.1) + Transformers + Docker Setup
+# ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.12.0 (Preview (Nightly)) + Transformers + Docker Setup
 # Compatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server) — Ubuntu 20.04.x is no longer supported
 # ================================================================================================================
 # Description:
@@ -17,7 +17,7 @@
 #
 # Kernel Versions Tested:
 #   - Ubuntu 22.04.5: 5.15.0-160
-#   - Ubuntu 24.04.3: 6.8.0-90
+#   - Ubuntu 24.04.3: 6.8.0-94
 #
 # Supported Hardware:
 #   - AMD CDNA1 | CDNA2 | CDNA3 | CDNA4 | RDNA3 | RDNA4 GPU Architectures | Strix APU Architecture
