@@ -3,7 +3,7 @@
 ### 1️⃣ **System preperation**
 Install **Ubuntu 22.04.5 LTS** or **Ubuntu 24.04.3 LTS** (Server or Desktop version).
 Install the the automates ROCm 
-Download and Install the latest vLLM container (RDNA4 build for Ubuntu 24.04.x (~13.6GB))
+Download and Install the latest vLLM container (RDNA4 build for Ubuntu 24.04.x (~15.97GB))
 ```bash
 sudo docker pull rocm/vllm-dev:rocm7.2_navi_ubuntu22.04_py3.10_pytorch_2.9_vllm_0.14.0rc0
 ```
