@@ -226,8 +226,21 @@ install_noble() {
     sudo DEBIAN_FRONTEND=noninteractive apt install -y libmsgpack-dev
     sudo DEBIAN_FRONTEND=noninteractive apt install -y rocm-bandwidth-test
 
-    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+    # Temporary export for current session
+    export PATH=/opt/rocm/bin:$PATH
+    export LD_LIBRARY_PATH=/opt/rocm/lib:$LD_LIBRARY_PATH
+
+    # Ensure ~/.local/bin is in PATH permanently, only if not already added
+    if ! grep -q 'export PATH="$HOME/.local/bin:$PATH"' ~/.bashrc; then
+        echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+        echo "~/.local/bin added to PATH in .bashrc"
+    fi
+
+    # Optionally, reload .bashrc in current session
     source ~/.bashrc
+
+    # Pause before continuing
+    read -n1 -r -p "Press any key to continue..." key
 
     print '\nInstalling Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
 
