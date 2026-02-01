@@ -172,7 +172,8 @@ Using the `--run tb p2p` flag runs **Peer-to-peer device memory bandwidth test**
 
 Run the P2P test
 ```bash
-sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb p2p
+cd /opt/rocm/bin
+./rocm_bandwidth_test plugin --run tb p2p
 ```
 
 ### Output
