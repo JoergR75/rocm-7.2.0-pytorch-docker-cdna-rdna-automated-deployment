@@ -239,9 +239,6 @@ install_noble() {
     # Optionally, reload .bashrc in current session
     source ~/.bashrc
 
-    # Pause before continuing
-    read -n1 -r -p "Press any key to continue..." key
-
     print '\nInstalling Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
 
     pip3 install --upgrade pip --break-system-packages
@@ -375,7 +372,7 @@ else
 fi
 
 # Final installation message
-print '\n✅ Finished ROCm 7.2.0 + OCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers environment installation and setup.\n'
+print '✅ Finished ROCm 7.2.0 + OCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers environment installation and setup.\n'
 
 # Post-reboot testing instructions
 printf "\nAfter the reboot, test your installation with:\n"
