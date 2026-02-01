@@ -166,6 +166,7 @@ install_noble() {
 
         sudo apt autoremove -y rocm-core
         sudo apt autoremove -y amdgpu-dkms
+        sudo apt autoremove -y rocm-bandwidth-test
         sudo rm -rf /var/cache/apt/*
         sudo apt-get clean all
 
