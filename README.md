@@ -108,14 +108,14 @@ python3 test.py
 ```
 Expected Output Example:
 
-<img width="657" height="292" alt="{D098A0C7-EEAE-4AEA-8005-CB3BA2231E31}" src="https://github.com/user-attachments/assets/96532f63-bfda-44db-a44d-087db011892f" />
+<img width="652" height="281" alt="image" src="https://github.com/user-attachments/assets/d3349cd3-811d-48fa-8ac0-c997ea61fb84" />
 
 More details about the ROCm driver version can be reviewed:
 ```bash
 apt show rocm-libs -a
 ```
 
-<img width="898" height="527" alt="{8CE38CD7-EA93-44A4-8778-C1EE06F19243}" src="https://github.com/user-attachments/assets/5396ce18-93d4-40cf-9025-173d8c04d4fe" />
+<img width="925" height="465" alt="image" src="https://github.com/user-attachments/assets/b284f358-b605-4370-a366-58ac31f5e11f" />
 
 ## ⏻ Setting the right Power Management with `rocm-smi`
 
