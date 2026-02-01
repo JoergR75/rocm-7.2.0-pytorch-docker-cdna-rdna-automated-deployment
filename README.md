@@ -1,4 +1,4 @@
-# 🧩 ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.11.0 (Preview Nightly) + Transformers + Docker Setup
+# ⚙️ ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers + Docker Setup
 
 [![ROCm](https://img.shields.io/badge/ROCm-7.2.0-ff6b6b?logo=amd)](https://rocm.docs.amd.com/en/docs-7.2.0/about/release-notes.html)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0%20%28Preview%29-ee4c2c?logo=pytorch)](https://pytorch.org/get-started/locally/)
@@ -6,7 +6,6 @@
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2024.04-e95420?logo=ubuntu)](https://ubuntu.com/download/server)
 [![AMD Radeon AI PRO R9700](https://img.shields.io/badge/AMD-Radeon(TM)%20AI%20PRO%20R9700-8B0000?logo=amd)](https://www.amd.com/en/products/graphics/workstations/radeon-ai-pro/ai-9000-series/amd-radeon-ai-pro-r9700.html)
 [![AMD CDNA MI300 Series](https://img.shields.io/badge/AMD-CDNA%20Instint%20MI300%20Series-8B0000?logo=amd)](https://www.amd.com/en/technologies/cdna.html)
-
 
 ## 📌 Overview
 The script provisions a fully automated, non-interactive AMD GPU software development environment for AI and HPC software engineering on **Ubuntu 22.04** and **24.04**, centered on **ROCm 7.2.0** and **PyTorch** Preview Nightly.
