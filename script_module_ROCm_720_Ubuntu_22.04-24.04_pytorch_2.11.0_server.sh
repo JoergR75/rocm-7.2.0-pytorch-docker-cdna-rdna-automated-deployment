@@ -112,7 +112,7 @@ install_jellyfish() {
 
     # Installing multiple use cases including ROCm 7.2.0, OCL and HIP SDK
 
-    print '\nInstalling ROCm 7.2.0 + OCL 2.x environment ...\n'
+    print '\n📦 Installing ROCm 7.2.0 + OCL 2.x environment ...\n'
 
     sudo DEBIAN_FRONTEND=noninteractive apt-get update
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq amdgpu-dkms rocm
@@ -142,7 +142,7 @@ install_jellyfish() {
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
 
-    print '\nInstalling Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
+    print '\n📦 Installing Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
 
     python3 -m pip install --upgrade pip --quiet --no-input
     python3 -m pip install --upgrade pip wheel --quiet --no-input
