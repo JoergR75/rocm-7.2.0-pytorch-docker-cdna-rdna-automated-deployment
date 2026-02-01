@@ -225,21 +225,22 @@ docker --version
 
 ### 🤖 vLLM Docker Images
 
-To use vLLM optimized for RDNA4 and CDNA3:
+To use vLLM optimized for RDNA4 and CDNA:
+
 Use the container image you need.
+
+**RDNA4** architecture
 ```bash
-# RDNA4 build for Ubuntu 24.04.x (~13.6GB)
-sudo docker pull rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
+sudo docker pull rocm/vllm-dev:rocm7.2_navi_ubuntu22.04_py3.10_pytorch_2.9_vllm_0.14.0rc0
 ```
 
-<img width="987" height="612" alt="{5F35B378-5D25-40DA-A371-5CB1EBD7B5BE}" src="https://github.com/user-attachments/assets/23daf947-9a03-4709-a1cd-416987c34047" />
+<img width="904" height="611" alt="image" src="https://github.com/user-attachments/assets/115f8e53-5957-4670-a6fa-8815131837f8" />
 
 Further vLLM Docker versions for RDNA 4 can be verified on Docker Hub:  
 https://hub.docker.com/r/rocm/vllm-dev/tags?name=navi
 
-or
+or for **CDNA** architecture
 ```bash
-# CDNA3 build
 sudo docker pull rocm/vllm:latest
 ```
 
