@@ -399,12 +399,12 @@ printf "  sudo docker run -it --device=/dev/kfd --device=/dev/dri \\
 printf "\nThe container will run using the image 'rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0', with flags enabling AMD GPU access via ROCm.\n\n"
 
 # reboot option
-print 'Reboot system now (recommended)? (y/n)'
+print '🔄 Reboot system now (recommended)? (y/n)'
 read q
 if [ $q == "y" ]; then
     for i in 3 2 1
     do
-        printf "Reboot in $i ...\r"; sleep 1
+        printf "🔄 Reboot in $i ...\r"; sleep 1
     done
     sudo reboot
 fi
