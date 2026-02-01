@@ -1,10 +1,10 @@
 #!/bin/bash
 # ================================================================================================================
-# ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.12.0 (Preview (Nightly)) + Transformers + Docker Setup
+# ROCm 7.2.0 + OpenCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers + Docker Setup
 # Compatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server) — Ubuntu 20.04.x is no longer supported
 # ================================================================================================================
 # Description:
-# This script automates the installation of AMD ROCm 7.2.0, PyTorch 2.12.0 (nightly for ROCm7.1), Transformers, and Docker
+# This script automates the installation of AMD ROCm 7.2.0, PyTorch 2.11.0 (Preview (Nightly)), Transformers, and Docker
 # on Ubuntu 22.04.x and 24.04.x systems. It automatically fetches the appropriate installation scripts and performs
 # a fully non-interactive setup optimized for both desktop and server environments.
 # ================================================================================================================
