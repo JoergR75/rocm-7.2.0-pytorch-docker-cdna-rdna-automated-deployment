@@ -201,7 +201,7 @@ install_noble() {
 
     # Installing multiple use cases including ROCm 7.2.0, OCL and HIP SDK
 
-    print '\nInstalling ROCm 7.2.0 + OCL 2.x environment ...\n'
+    print '\n📦 Installing ROCm 7.2.0 + OCL 2.x environment ...\n'
 
     sudo apt update
     sudo apt install amdgpu-dkms rocm --yes
@@ -230,7 +230,7 @@ install_noble() {
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
 
-    print '\nInstalling Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
+    print '\n📦 Installing Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
 
     pip3 install --upgrade pip --break-system-packages
     pip3 install --upgrade pip wheel --break-system-packages
