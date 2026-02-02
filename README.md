@@ -255,16 +255,22 @@ sudo docker run -it \
     --group-add video \
     rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0
 ```
+
+<img width="954" height="149" alt="{74DEF1F8-EC94-4015-8FF1-8B24B6554763}" src="https://github.com/user-attachments/assets/6e67ae9e-6874-4b30-9d31-22ba4d740c47" />
+
 With `rocm-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
 
-<img width="1042" height="273" alt="{F27CCEEE-9D11-441D-889F-5EAB77E0788A}" src="https://github.com/user-attachments/assets/61bb00ec-608a-4dd5-bbd5-5938eff259af" />
+<img width="960" height="412" alt="{5BA15566-340C-4D66-8F07-6E85BA5A09C1}" src="https://github.com/user-attachments/assets/562ac5eb-bb8b-429c-80e4-7d5c7aee044b" />
 
 or `amd-smi`
 
-<img width="804" height="401" alt="{F2FE5F1A-871E-4A40-A730-CA2F8D514078}" src="https://github.com/user-attachments/assets/1e781e2d-643a-4e89-a63d-5e74e1a26534" />
+<img width="946" height="403" alt="{35EFA5E7-C3E2-4EF0-876F-AFDCD5EF68EF}" src="https://github.com/user-attachments/assets/efda1960-d4f6-480f-bb73-82ec663996c3" />
 
 If you need to add a specific GPU, you can use the **passthrough** option.  
 First, verify the available GPUs in the `/dev/dri` directory.
+```bash
+cd /dev/dri
+```
 
 <img width="871" height="77" alt="{5CE24323-6294-4E65-9B0F-553A87AED057}" src="https://github.com/user-attachments/assets/30aff011-0a88-442c-a8a4-3e2d7633ba3e" />
 
