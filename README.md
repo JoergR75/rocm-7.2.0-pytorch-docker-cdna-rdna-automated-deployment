@@ -304,17 +304,17 @@ sudo docker ps -a
 <img width="964" height="183" alt="{28889A6F-A904-4442-9F2A-A07F7FA54FE4}" src="https://github.com/user-attachments/assets/b741f153-191e-4234-af67-f254ff173d1f" />
 
 4️⃣ In this example, we want to save the running container `unruffled_ramanujan` as a new image named `my-vllm-image:rocm7.2`:
-
 ```bash
 docker commit unruffled_ramanujan my-vllm-image:rocm7.2
 ```
 
 <img width="946" height="49" alt="{0B5FCABD-DC2E-4E11-87E1-D02D008A13BD}" src="https://github.com/user-attachments/assets/faf585bc-31dd-42b3-8c4f-acd1a63601aa" />
 
-Verify the new container
+5️⃣ Verify that the new image was created successfully:
 ```bash
 sudo docker images
 ```
+
 <img width="969" height="110" alt="{32CADCEC-D818-44A9-B750-F8BB6307495A}" src="https://github.com/user-attachments/assets/b22b2ddf-0897-468d-b742-1b86246bfd4d" />
 
 Start the new container with one GPU (D129)
