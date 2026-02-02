@@ -291,7 +291,8 @@ GPU2 has been added to the container
 ## How to Save a Modified Docker Container
 
 1️⃣ Open your container and modify it as needed (e.g., install packages, change configurations).
-   **Do not stop or close the container.**
+
+**⚠️ Note: Do not stop or close the container!**
 
 2️⃣ Open another terminal (CLI) window.
 
