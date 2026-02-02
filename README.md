@@ -77,8 +77,7 @@ wget https://raw.githubusercontent.com/JoergR75/rocm-7.2.0-pytorch-docker-cdna-r
 bash script_module_ROCm_720_Ubuntu_22.04-24.04_pytorch_server.sh
 ```
 **⚠️ Note**: Entering the user password may be required.
-
-<img width="873" height="294" alt="{29E92554-013D-4450-968F-036282CBA9C6}" src="https://github.com/user-attachments/assets/011e053b-c444-4f3d-b276-cabae5224f2d" />
+<img width="956" height="327" alt="{036AB9F1-945C-461E-B497-C8F977804405}" src="https://github.com/user-attachments/assets/df538538-32d7-40c3-a67e-cc065c5b8bc0" />
 
 The installation takes ~15 minutes depending on internet speed and hardware performance.
 
