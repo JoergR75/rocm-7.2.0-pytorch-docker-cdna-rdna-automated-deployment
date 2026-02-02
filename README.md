@@ -272,7 +272,7 @@ First, verify the available GPUs in the `/dev/dri` directory.
 cd /dev/dri && ls
 ```
 
-<img width="871" height="77" alt="{5CE24323-6294-4E65-9B0F-553A87AED057}" src="https://github.com/user-attachments/assets/30aff011-0a88-442c-a8a4-3e2d7633ba3e" />
+<img width="932" height="57" alt="{C2369C00-4A7E-49F8-8F5E-03D04E74EFD8}" src="https://github.com/user-attachments/assets/68cb7dca-58b7-4857-a2eb-c51497fc5dbc" />
 
 Let's choose **GPU2**, also referred to as **"card2"** or **"renderD129"**.
 ```bash
@@ -282,7 +282,7 @@ sudo docker run -it \
     --device=/dev/dri/renderD129 \
     --security-opt seccomp=unconfined \
     --group-add video \
-    rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
+    rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0
 ```
 GPU2 has been added to the container
 
