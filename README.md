@@ -286,4 +286,4 @@ sudo docker run -it \
 ```
 GPU2 has been added to the container
 
-<img width="1036" height="383" alt="{DDB60941-260E-4E11-B6C8-A00772A25C5E}" src="https://github.com/user-attachments/assets/04feef9e-7191-4658-b9f4-9a72323d4d8c" />
+<img width="961" height="522" alt="{F1AD2594-BDD5-49B3-B875-17DD0C4283C7}" src="https://github.com/user-attachments/assets/e1958915-9ef6-440f-840a-01e734f509aa" />
