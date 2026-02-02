@@ -288,6 +288,7 @@ GPU2 has been added to the container
 
 <img width="961" height="522" alt="{F1AD2594-BDD5-49B3-B875-17DD0C4283C7}" src="https://github.com/user-attachments/assets/e1958915-9ef6-440f-840a-01e734f509aa" />
 
+
 **How to safe a modified container?**
 
 Open your container and modiefy and install as appropiate. Don't close the container!
