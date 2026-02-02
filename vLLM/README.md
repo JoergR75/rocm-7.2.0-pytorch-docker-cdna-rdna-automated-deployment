@@ -38,6 +38,15 @@ python3 benchmark_vllm.py \
 
 <img width="894" height="215" alt="{2E07A558-C14D-49E9-8B34-6BAC7FBB26B8}" src="https://github.com/user-attachments/assets/4d78ef93-22f3-4af8-a670-fdfaaec6bf01" />
 
+An access token can be created in your user profile "Access Token"
+Make sure following will be set
+- Read access to contents of all repos under your personal namespace
+- View access requests for all gated repos under your personal namespace
+- Read access to contents of all public gated repos you can access
+
+<img width="819" height="531" alt="{22847529-E5E4-42DA-A3BA-2363ECE3E434}" src="https://github.com/user-attachments/assets/26f3cb51-f23d-465f-a834-69f374b7ef39" />
+
+
 **Bielik 1.5 v3** (3.2 GB - access token required)
 <img width="967" height="558" alt="{8F27905B-30A8-4ED4-BBEB-C4019B482010}" src="https://github.com/user-attachments/assets/527b87c5-d5d0-4c28-9b58-5b3b9761b2e8" />
 
