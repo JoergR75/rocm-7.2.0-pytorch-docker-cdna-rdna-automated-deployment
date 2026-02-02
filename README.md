@@ -302,3 +302,9 @@ sudo docker ps -a
 In this example we want to safe the running instance "unruffled_ramanujan" with the name "my-vllm-image:rocm7.2"
 docker commit unruffled_ramanujan my-vllm-image:rocm7.2
 <img width="946" height="49" alt="{0B5FCABD-DC2E-4E11-87E1-D02D008A13BD}" src="https://github.com/user-attachments/assets/faf585bc-31dd-42b3-8c4f-acd1a63601aa" />
+
+Verify the new container
+```bash
+sudo docker images
+```
+<img width="969" height="110" alt="{32CADCEC-D818-44A9-B750-F8BB6307495A}" src="https://github.com/user-attachments/assets/b22b2ddf-0897-468d-b742-1b86246bfd4d" />
