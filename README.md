@@ -231,9 +231,9 @@ To use vLLM optimized for RDNA4 and CDNA:
 
 Use the container image you need.
 
-**RDNA4** architecture
+**RDNA4** architecture running on Ubuntu 24.04
 ```bash
-sudo docker pull rocm/vllm-dev:rocm7.2_navi_ubuntu22.04_py3.10_pytorch_2.9_vllm_0.14.0rc0
+docker pull rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0
 ```
 
 <img width="953" height="617" alt="{40B25A13-ADCE-48FF-9019-75D4BD8839AE}" src="https://github.com/user-attachments/assets/8b598ff2-cd40-4b7a-a4b8-537cc85fbab1" />
@@ -253,7 +253,7 @@ sudo docker run -it \
     --device=/dev/dri \
     --security-opt seccomp=unconfined \
     --group-add video \
-    rocm/vllm-dev:rocm7.2_navi_ubuntu22.04_py3.10_pytorch_2.9_vllm_0.14.0rc0
+    rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0
 ```
 With `rocm-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
 
