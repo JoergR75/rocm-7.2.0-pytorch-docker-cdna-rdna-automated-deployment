@@ -296,3 +296,7 @@ Open another cli instance
 sudo docker ps -a
 ```
 <img width="964" height="183" alt="{28889A6F-A904-4442-9F2A-A07F7FA54FE4}" src="https://github.com/user-attachments/assets/b741f153-191e-4234-af67-f254ff173d1f" />
+
+In this example we want to safe the running instance "unruffled_ramanujan" with the name "my-vllm-image:rocm7.2"
+docker commit unruffled_ramanujan my-vllm-image:rocm7.2
+<img width="946" height="49" alt="{0B5FCABD-DC2E-4E11-87E1-D02D008A13BD}" src="https://github.com/user-attachments/assets/faf585bc-31dd-42b3-8c4f-acd1a63601aa" />
