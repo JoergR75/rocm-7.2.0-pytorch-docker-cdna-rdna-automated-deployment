@@ -246,7 +246,7 @@ or for **CDNA** architecture
 sudo docker pull rocm/vllm:latest
 ```
 
-Run vLLM with all available AMD GPU access (example for RDNA4)
+Run vLLM with all available AMD GPU access (example for RDNA4 on Ubuntu 24.04)
 ```bash
 sudo docker run -it \
     --device=/dev/kfd \
