@@ -24,12 +24,6 @@ wget https://raw.githubusercontent.com/JoergR75/rocm-7.2.0-pytorch-docker-cdna-r
 
 <img width="966" height="294" alt="{A2A512A8-09CF-4579-9AA2-169B8C66C3DD}" src="https://github.com/user-attachments/assets/469379ea-0a1e-4caa-89d4-23004a544c3f" />
 
-Install tabulate
-```bash
-pip3 install tabulate
-```
-<img width="1012" height="132" alt="{DBE97894-2F06-4929-AC9F-1A04529BDFFF}" src="https://github.com/user-attachments/assets/209cc851-da38-4413-a512-b7d8edebaa03" />
-
 ### 3️⃣ **Run the Benchmark**
 Without a required hugging face token
 ```python
