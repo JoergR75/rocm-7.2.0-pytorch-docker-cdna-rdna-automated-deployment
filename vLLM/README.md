@@ -38,7 +38,7 @@ python3 benchmark_vllm.py \
 
 <img width="894" height="215" alt="{2E07A558-C14D-49E9-8B34-6BAC7FBB26B8}" src="https://github.com/user-attachments/assets/4d78ef93-22f3-4af8-a670-fdfaaec6bf01" />
 
-An access token can be created in your user profile under 'Access Token.' Make sure the following settings are configured:
+An access token can be created in your user profile under "Access Token". Make sure the following settings are configured:
 - Read access to contents of all repos under your personal namespace
 - View access requests for all gated repos under your personal namespace
 - Read access to contents of all public gated repos you can access
