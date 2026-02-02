@@ -38,7 +38,8 @@ python3 benchmark_vllm.py \
 
 <img width="894" height="215" alt="{2E07A558-C14D-49E9-8B34-6BAC7FBB26B8}" src="https://github.com/user-attachments/assets/4d78ef93-22f3-4af8-a670-fdfaaec6bf01" />
 
-Bielik 1.5 v3 (3.2 GB - access token required)
+**Bielik 1.5 v3** (3.2 GB - access token required)
+<img width="967" height="558" alt="{8F27905B-30A8-4ED4-BBEB-C4019B482010}" src="https://github.com/user-attachments/assets/527b87c5-d5d0-4c28-9b58-5b3b9761b2e8" />
 
 
 
