@@ -110,7 +110,7 @@ python3 test.py
 ```
 Expected Output Example:
 
-<img width="652" height="281" alt="image" src="https://github.com/user-attachments/assets/d3349cd3-811d-48fa-8ac0-c997ea61fb84" />
+<img width="901" height="290" alt="{BA60D6AC-8DEA-45C2-BB42-BB2F42A9F346}" src="https://github.com/user-attachments/assets/f2a67558-6cdb-40e2-a3b4-80789344262a" />
 
 More details about the ROCm driver version can be reviewed:
 ```bash
