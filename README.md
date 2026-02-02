@@ -317,7 +317,7 @@ sudo docker images
 
 <img width="969" height="110" alt="{32CADCEC-D818-44A9-B750-F8BB6307495A}" src="https://github.com/user-attachments/assets/b22b2ddf-0897-468d-b742-1b86246bfd4d" />
 
-Start the new container with one GPU (D129)
+6️⃣ Start a new container with one GPU (renderD129):
 ```bash
 sudo docker run -it \
     --device=/dev/kfd \
