@@ -19,7 +19,7 @@ sudo docker run -it \
 
 ### 2️⃣ **Download the python Benchmark-Script from the Repository**
 ```bash
-wget https://raw.githubusercontent.com/JoergR75/rocm-7.1.1-pytorch-2.11.0-docker-cdna3-rdna4-automated-deployment/refs/heads/main/vLLM/vLLMbench.py
+wget https://raw.githubusercontent.com/JoergR75/rocm-7.2.0-pytorch-docker-cdna-rdna-automated-deployment/refs/heads/main/vLLM/benchmark_vllm.py
 ```
 <img width="1216" height="276" alt="{DA9A9447-CA91-4CE5-8095-B545AA24E564}" src="https://github.com/user-attachments/assets/9f960a0a-4415-428f-b308-9534df12e867" />
 
@@ -32,11 +32,11 @@ pip3 install tabulate
 ### 3️⃣ **Run the Benchmark**
 Without a required hugging face token
 ```python
-python3 vLLMbench.py
+python3 benchmark_vllm.py
 ```
 With required hf token
 ```python
-python3 vLLMbench.py \
+python3 benchmark_vllm.py \
   --hf-token hf_xxxx
 ```
 **⚠️ Note**: verify if a hf token to access the model will be required. Some models aslo require to accept license notice.
