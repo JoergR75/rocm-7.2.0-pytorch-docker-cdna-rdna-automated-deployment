@@ -44,7 +44,7 @@ python3 benchmark_vllm.py \
 - Read access to contents of all public gated repos you can access
 
 **Bielik 1.5 v3** (3.2 GB - access token required)
-<img width="967" height="558" alt="{8F27905B-30A8-4ED4-BBEB-C4019B482010}" src="https://github.com/user-attachments/assets/527b87c5-d5d0-4c28-9b58-5b3b9761b2e8" />
+<img width="964" height="554" alt="{29113BEF-A46F-4172-9EC5-6ACD7A111E41}" src="https://github.com/user-attachments/assets/21c1f4e3-5544-40d0-b2f9-8f6e43b7038c" />
 
 **Bielik 4.5B v3** (9.1 GB - access token required)
 
