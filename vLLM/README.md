@@ -21,7 +21,8 @@ sudo docker run -it \
 ```bash
 wget https://raw.githubusercontent.com/JoergR75/rocm-7.2.0-pytorch-docker-cdna-rdna-automated-deployment/refs/heads/main/vLLM/benchmark_vllm.py
 ```
-<img width="1216" height="276" alt="{DA9A9447-CA91-4CE5-8095-B545AA24E564}" src="https://github.com/user-attachments/assets/9f960a0a-4415-428f-b308-9534df12e867" />
+
+<img width="966" height="294" alt="{A2A512A8-09CF-4579-9AA2-169B8C66C3DD}" src="https://github.com/user-attachments/assets/469379ea-0a1e-4caa-89d4-23004a544c3f" />
 
 Install tabulate
 ```bash
