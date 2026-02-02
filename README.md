@@ -134,10 +134,9 @@ Use the following command to verify the active power profile:
 ```bash
 rocm-smi --showprofile
 ```
-
 The star (*) marks the current profile which is set to **BOOTUP DEFAULT**
 
-<img width="893" height="429" alt="image" src="https://github.com/user-attachments/assets/10244725-66f6-40d5-9cd7-12ef06f70377" />
+<img width="955" height="418" alt="{47D793DA-4B98-4279-A98C-02D5B0E19603}" src="https://github.com/user-attachments/assets/90224340-630a-4555-b448-e84ae54eb91a" />
 
 Set the GPU to the high-performance / compute-optimized power profile.
 This profile prioritizes sustained clocks and higher power limits, making it well suited for AI inference, training, and other compute-intensive workloads.
@@ -147,7 +146,7 @@ It may increase power consumption but helps ensure consistent performance under 
 rocm-smi --setprofile 4
 ```
 
-<img width="865" height="243" alt="image" src="https://github.com/user-attachments/assets/fadd6e48-0e51-4464-907a-dd3c656a0a3c" />
+<img width="939" height="237" alt="{66B98679-C70F-44BC-9C08-CBAFAD62B7C0}" src="https://github.com/user-attachments/assets/049e36aa-2460-4d29-8032-3cc9183eaafc" />
 
 ## 📶 ROCm Bandwidth Test
 
@@ -223,7 +222,8 @@ Check Docker installation and version
 ```bash
 docker -v
 ```
-<img width="571" height="39" alt="image" src="https://github.com/user-attachments/assets/54babcd1-42ef-4af6-9dda-14aa8b7cfa21" />
+
+<img width="935" height="58" alt="{5C81E868-4389-4580-988D-A13C34F1963B}" src="https://github.com/user-attachments/assets/2119225b-044c-4e4d-967f-2c6dd554715d" />
 
 ### 🤖 vLLM Docker Images
 
@@ -236,7 +236,7 @@ Use the container image you need.
 sudo docker pull rocm/vllm-dev:rocm7.2_navi_ubuntu22.04_py3.10_pytorch_2.9_vllm_0.14.0rc0
 ```
 
-<img width="904" height="611" alt="image" src="https://github.com/user-attachments/assets/115f8e53-5957-4670-a6fa-8815131837f8" />
+<img width="953" height="617" alt="{40B25A13-ADCE-48FF-9019-75D4BD8839AE}" src="https://github.com/user-attachments/assets/8b598ff2-cd40-4b7a-a4b8-537cc85fbab1" />
 
 Further vLLM Docker versions for RDNA4 can be verified on Docker Hub:  
 https://hub.docker.com/r/rocm/vllm-dev/tags?name=navi
