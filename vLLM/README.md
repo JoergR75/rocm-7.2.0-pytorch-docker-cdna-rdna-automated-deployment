@@ -41,6 +41,10 @@ python3 benchmark_vllm.py \
 **Bielik 1.5 v3** (3.2 GB - access token required)
 <img width="967" height="558" alt="{8F27905B-30A8-4ED4-BBEB-C4019B482010}" src="https://github.com/user-attachments/assets/527b87c5-d5d0-4c28-9b58-5b3b9761b2e8" />
 
+**Bielik 4.5B v3** (9.1 GB - access token required)
+
+
+**Bielik 11B v3** (20.9 GB - access token required)
 
 
 Bielik 1.5B v3 (3.2 GB)
