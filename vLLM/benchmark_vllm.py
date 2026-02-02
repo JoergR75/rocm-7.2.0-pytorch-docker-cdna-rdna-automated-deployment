@@ -24,7 +24,7 @@ import os
 from vllm import AsyncLLMEngine, SamplingParams
 from vllm.engine.arg_utils import AsyncEngineArgs
 import time
-from tabulate import tabulate  # optional
+from tabulate import tabulate
 import torch
 
 # MODEL_NAME = "NousResearch/Hermes-4-14B" # Qwen 3
