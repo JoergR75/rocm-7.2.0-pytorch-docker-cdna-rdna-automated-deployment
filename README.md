@@ -287,3 +287,12 @@ sudo docker run -it \
 GPU2 has been added to the container
 
 <img width="961" height="522" alt="{F1AD2594-BDD5-49B3-B875-17DD0C4283C7}" src="https://github.com/user-attachments/assets/e1958915-9ef6-440f-840a-01e734f509aa" />
+
+How to safe a modified container?
+Open your container and modiefy and install as appropiate. Don't close the container!
+Open another cli instance 
+1. Verify installed containers
+```bash
+sudo docker ps -a
+```
+<img width="964" height="183" alt="{28889A6F-A904-4442-9F2A-A07F7FA54FE4}" src="https://github.com/user-attachments/assets/b741f153-191e-4234-af67-f254ff173d1f" />
