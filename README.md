@@ -267,12 +267,12 @@ or `amd-smi`
 <img width="946" height="403" alt="{35EFA5E7-C3E2-4EF0-876F-AFDCD5EF68EF}" src="https://github.com/user-attachments/assets/efda1960-d4f6-480f-bb73-82ec663996c3" />
 
 If you need to add a specific GPU, you can use the **passthrough** option.  
-First, verify the available GPUs in the `/dev/dri` directory.
+First, verify the available GPUs in the `/dev/dri` directory (host).
 ```bash
 cd /dev/dri && ls
 ```
 
-<img width="932" height="57" alt="{C2369C00-4A7E-49F8-8F5E-03D04E74EFD8}" src="https://github.com/user-attachments/assets/68cb7dca-58b7-4857-a2eb-c51497fc5dbc" />
+<img width="941" height="60" alt="{E317C1FB-07B6-4492-B217-D43F001129B4}" src="https://github.com/user-attachments/assets/856b810b-737b-49cb-a1fd-f4081eca13f5" />
 
 Let's choose **GPU2**, also referred to as **"card2"** or **"renderD129"**.
 ```bash
