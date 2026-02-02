@@ -269,7 +269,7 @@ or `amd-smi`
 If you need to add a specific GPU, you can use the **passthrough** option.  
 First, verify the available GPUs in the `/dev/dri` directory.
 ```bash
-cd /dev/dri
+cd /dev/dri && ls
 ```
 
 <img width="871" height="77" alt="{5CE24323-6294-4E65-9B0F-553A87AED057}" src="https://github.com/user-attachments/assets/30aff011-0a88-442c-a8a4-3e2d7633ba3e" />
