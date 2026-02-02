@@ -183,7 +183,7 @@ The tool prints results in a **matrix format** showing bandwidth (GB/s) between 
 
 More details about the setup can be verified by
 ```bash
-sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
+cd /opt/rocm/bin && ./rocm_bandwidth_test plugin --run tb
 ```
 
 <img width="861" height="275" alt="{4103D9C7-2ECE-42CF-A231-DC1D7004C7BF}" src="https://github.com/user-attachments/assets/e0a1efaf-9c5c-4c6c-b2d9-8ff14cf1b623" />
@@ -196,7 +196,7 @@ If it is disabled, **P2P** will be deactivated, as shown below:
 
 More details about the setup can be verified by
 ```bash
-sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
+cd /opt/rocm/bin && ./rocm_bandwidth_test plugin --run tb
 ```
 
 <img width="904" height="274" alt="{3F58A790-E952-4BD9-9F0A-B99FD8F0B081}" src="https://github.com/user-attachments/assets/28b1808a-8216-4d7c-b1ea-db599f140056" />
