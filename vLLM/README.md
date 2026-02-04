@@ -1,3 +1,5 @@
+This Python script benchmarks large language model inference using **vLLM on AMD ROCm GPUs**. It measures **generation throughput, prompt throughput, latency, and time-to-first-token (TTFT)** across varying concurrency levels (1–32 parallel requests), while tracking success rate and GPU environment details. The benchmark helps evaluate **performance, responsiveness, and scalability** of LLM serving under load.
+
 ## 🚀 Installation
 
 ### 1️⃣ **System preperation**
