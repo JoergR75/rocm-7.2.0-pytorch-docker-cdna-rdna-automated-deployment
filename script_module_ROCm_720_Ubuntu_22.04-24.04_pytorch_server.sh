@@ -124,7 +124,7 @@ install_jellyfish() {
 
     # add the user to the sudo group (iportant e.g. to compile vllm, flashattention in a pip environment)
 
-    sudo usermod -a -G video,render ${SUDO_USER:-$USER}
+    sudo usermod -a -G video,render,audio ${SUDO_USER:-$USER}
     sudo usermod -aG sudo ${SUDO_USER:-$USER}
 
     # Install tools - git, htop, cmake, libmsgpack-dev, ncdu (NCurses Disk Usage utility / df -h) and freeipmi-tools (BMC version read)
