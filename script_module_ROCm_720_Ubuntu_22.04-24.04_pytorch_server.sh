@@ -13,11 +13,11 @@
 # ---------------------------------------------------------------------------------------------------------------
 # Operating System (OS):
 #   - Ubuntu 22.04.5 LTS (Jammy Jellyfish)
-#   - Ubuntu 24.04.3 LTS (Noble Numbat)
+#   - Ubuntu 24.04.4 LTS (Noble Numbat)
 #
 # Kernel Versions Tested:
 #   - Ubuntu 22.04.5: 5.15.0-160
-#   - Ubuntu 24.04.3: 6.8.0-100
+#   - Ubuntu 24.04.4: 6.8.0-100
 #
 # Supported Hardware:
 #   - AMD CDNA1 | CDNA2 | CDNA3 | CDNA4 | RDNA3 | RDNA4 GPU Architectures | Strix APU Architecture
