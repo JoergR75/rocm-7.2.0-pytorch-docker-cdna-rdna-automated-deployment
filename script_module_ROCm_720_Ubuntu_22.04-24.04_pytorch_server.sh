@@ -322,11 +322,11 @@ def get_total_memory_gb():
 if __name__ == "__main__":
     print(get_total_memory_gb())
 
-print("PyTorch version:", torch.__version__)
-print("ROCm version:", subprocess.getoutput("/opt/rocm/bin/hipconfig --version"))
-print("Is ROCm available:", torch.version.hip is not None)
-print("Number of GPUs:", torch.cuda.device_count())
-print("\nGPU Name:", torch.cuda.get_device_name(0) if torch.cuda.device_count() > 0 else "No GPU detected")
+print(" ✅ PyTorch version:", torch.__version__)
+print(" 🧪 ROCm version:", subprocess.getoutput("/opt/rocm/bin/hipconfig --version"))
+print(" ✅ Is ROCm available:", torch.version.hip is not None)
+print(" ⚡ Number of GPUs:", torch.cuda.device_count())
+print("\n ⚡ GPU Name:", torch.cuda.get_device_name(0) if torch.cuda.device_count() > 0 else "No GPU detected")
 
 # Create two tensors and add them on the GPU
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
