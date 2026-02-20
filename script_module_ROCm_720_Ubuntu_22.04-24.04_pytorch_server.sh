@@ -17,7 +17,7 @@
 #
 # Kernel Versions Tested:
 #   - Ubuntu 22.04.5: 5.15.0-160
-#   - Ubuntu 24.04.3: 6.8.0-94
+#   - Ubuntu 24.04.3: 6.8.0-100
 #
 # Supported Hardware:
 #   - AMD CDNA1 | CDNA2 | CDNA3 | CDNA4 | RDNA3 | RDNA4 GPU Architectures | Strix APU Architecture
@@ -29,8 +29,8 @@
 # ROCm Driver Repo:      https://repo.radeon.com/amdgpu-install/7.2/ubuntu/
 #
 # PyTorch:               2.11.0.dev20251221+rocm7.1
-# Transformers:          5.0.0
-# Docker:                29.2.0 min. 29.0.0 (the script will verify and skip installation if minimum requirements are installed)
+# Transformers:          5.1.0
+# Docker:                29.2.1 min. 29.0.0 (the script will verify and skip installation if minimum requirements are installed)
 #
 # INCLUDED TOOLS:
 # ---------------------------------------------------------------------------------------------------------------
@@ -43,11 +43,10 @@
 #   - freeipmi-tools      → Utilities for querying BMC firmware versions and IPMI functions
 #   - rocm-bandwidth-test → Utility to measure and validate host↔GPU and inter-GPU memory bandwidth
 #
-# EXECUTION DETAILS:
 # ---------------------------------------------------------------------------------------------------------------
 # Author:                Joerg Roskowetz
 # Estimated Runtime:     ~15 minutes (depending on system performance and internet speed)
-# Last Updated:          February 01st, 2026
+# Last Updated:          February 21st, 2026
 # ================================================================================================================
 
 # global stdout method
@@ -71,7 +70,7 @@ install_focal() {
 
 install_jellyfish() {
     print '\nUbuntu 22.04.x (jammy jellyfish) installation method has been set.\n'
-    print '\nChecking if ROCm is installed ...\n'
+    print '\n ✔️ Checking if ROCm is installed ...\n'
 
     if dpkg -l | grep -q rocm; then
         print '\nROCm detected. Removing ROCm and associated packages ...\n'
@@ -86,7 +85,7 @@ install_jellyfish() {
         print 'No ROCm installation detected.'
     fi
 
-    print '\nChecking for PyTorch packages installed via pip ...\n'
+    print '\n ✔️ Checking for PyTorch packages installed via pip ...\n'
 
     # Use pip with --break-system-packages to avoid "externally-managed-environment" error
     if python3 -m pip list | grep torch; then
@@ -112,7 +111,7 @@ install_jellyfish() {
 
     # Installing multiple use cases including ROCm 7.2.0, OCL and HIP SDK
 
-    print '\n📦 Installing ROCm 7.2.0 + OCL 2.x environment ...\n'
+    print '\n 📦 Installing ROCm 7.2.0 + OCL 2.x environment ...\n'
 
     sudo DEBIAN_FRONTEND=noninteractive apt-get update
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq amdgpu-dkms rocm
@@ -138,11 +137,20 @@ install_jellyfish() {
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq cmake
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq libmsgpack-dev
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq rocm-bandwidth-test
+    
+    # Add ROCm bandwidth test binary to PATH
+    echo 'export PATH="/opt/rocm/bin/rocm_bandwidth_test:$PATH"' >> ~/.bashrc
 
+    # Add ROCm libraries to LD_LIBRARY_PATH
+    echo 'export LD_LIBRARY_PATH="/opt/rocm/lib:$LD_LIBRARY_PATH"' >> ~/.bashrc
+
+    # Add local user bin to PATH
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+
+    # Apply changes immediately in current shell
     source ~/.bashrc
 
-    print '\n📦 Installing Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
+    print '\n 📦 Installing Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
 
     python3 -m pip install --upgrade pip --quiet --no-input
     python3 -m pip install --upgrade pip wheel --quiet --no-input
@@ -159,7 +167,7 @@ install_jellyfish() {
 
 install_noble() {
     print '\nUbuntu 24.04.x (noble numbat) installation method has been set.\n'
-    print '\nChecking if ROCm is installed ...\n'
+    print '\n ✔️ Checking if ROCm is installed ...\n'
 
     if dpkg -l | grep -q rocm; then
         print '\nROCm detected. Removing ROCm and associated packages ...\n'
@@ -175,7 +183,7 @@ install_noble() {
         print 'No ROCm version installation detected.'
     fi
 
-    print '\nChecking for PyTorch packages installed via pip ...\n'
+    print '\n ✔️ Checking for PyTorch packages installed via pip ...\n'
 
     # Use pip with --break-system-packages to avoid "externally-managed-environment" error
     if python3 -m pip list | grep torch; then
@@ -201,7 +209,7 @@ install_noble() {
 
     # Installing multiple use cases including ROCm 7.2.0, OCL and HIP SDK
 
-    print '\n📦 Installing ROCm 7.2.0 + OCL 2.x environment ...\n'
+    print '\n 📦 Installing ROCm 7.2.0 + OCL 2.x environment ...\n'
 
     sudo apt update
     sudo apt install amdgpu-dkms rocm --yes
@@ -227,10 +235,19 @@ install_noble() {
     sudo DEBIAN_FRONTEND=noninteractive apt install -y libmsgpack-dev
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -y rocm-bandwidth-test
 
+    # Add ROCm bandwidth test binary to PATH
+    echo 'export PATH="/opt/rocm/bin/rocm_bandwidth_test:$PATH"' >> ~/.bashrc
+
+    # Add ROCm libraries to LD_LIBRARY_PATH
+    echo 'export LD_LIBRARY_PATH="/opt/rocm/lib:$LD_LIBRARY_PATH"' >> ~/.bashrc
+
+    # Add local user bin to PATH
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+
+    # Apply changes immediately in current shell
     source ~/.bashrc
 
-    print '\n📦 Installing Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
+    print '\n 📦 Installing Pytorch 2.11.0 (Preview (Nightly)), Transformers environment ...\n'
 
     pip3 install --upgrade pip --break-system-packages
     pip3 install --upgrade pip wheel --break-system-packages
@@ -344,7 +361,7 @@ install_docker() {
     sudo usermod -a -G docker ${SUDO_USER:-$USER}
     sudo service docker restart
     docker --version
-    echo -e "\n✅ Docker installation completed."
+    echo -e "\n ✅ Docker installation completed."
 }
 
 # --- Docker version check -----------------------------------------------------
@@ -363,10 +380,10 @@ else
 fi
 
 # Final installation message
-print '✅ Finished ROCm 7.2.0 + OCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers environment installation and setup.\n'
+print ' ✅ Finished ROCm 7.2.0 + OCL 2.x + PyTorch 2.11.0 (Preview (Nightly)) + Transformers environment installation and setup.\n'
 
 # Post-reboot testing instructions
-printf "\nAfter the reboot, test your installation with:\n"
+printf "\n 🔹 After the reboot, test your installation with:\n"
 printf "  • rocminfo\n"
 printf "  • clinfo\n"
 printf "  • rocm-smi\n"
@@ -374,23 +391,23 @@ printf "  • amd-smi\n"
 printf "  • rocm-bandwidth-tool\n"
 
 # PyTorch verification
-printf "\nVerify the active PyTorch device:\n"
+printf "\n 🔹 Verify the active PyTorch device:\n"
 printf "  python3 test.py\n"
 
 # vLLM Docker images for RDNA4 and CDNA1/2/3/4
-printf "\nInstall the latest vLLM Docker images:\n"
+printf "\n 🔹 Install the latest vLLM Docker images:\n"
 printf "  RDNA4 → sudo docker pull rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0\n"
 printf "  CDNA → sudo docker pull rocm/vllm:latest\n"
 
 # Run the Docker container
-printf "\nStart the vLLM Docker container:\n"
+printf "\n 🔹 Start the vLLM Docker container:\n"
 printf "  sudo docker run -it --device=/dev/kfd --device=/dev/dri \\
     --security-opt seccomp=unconfined --group-add video rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0\n"
 
 printf "\nThe container will run using the image 'rocm/vllm-dev:rocm7.2_navi_ubuntu24.04_py3.12_pytorch_2.9_vllm_0.14.0rc0', with flags enabling AMD GPU access via ROCm.\n\n"
 
 # reboot option
-print '🔄 Reboot system now (recommended)? (y/n)'
+print ' 🔄 Reboot system now (recommended)? (y/n)'
 read q
 if [ $q == "y" ]; then
     for i in 3 2 1
