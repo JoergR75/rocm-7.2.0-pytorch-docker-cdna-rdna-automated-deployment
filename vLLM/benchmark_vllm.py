@@ -15,7 +15,7 @@
 # ---------------------------------------------------------------------------------------------------------------
 # Author:                Joerg Roskowetz
 # Estimated Runtime:     ~1-2 minutes (depending on model and batch size)
-# Last Updated:          February 1st, 2026
+# Last Updated:          March 26th, 2026
 # ================================================================================================================
 
 import asyncio
@@ -32,8 +32,13 @@ import torch
 # MODEL_NAME = "NousResearch/DeepHermes-3-Llama-3-8B-Preview"
 # MODEL_NAME = "speakleash/Bielik-11B-v2"
 # MODEL_NAME = "speakleash/Bielik-11B-v3-Base-20250730"
-MODEL_NAME = "speakleash/Bielik-1.5B-v3"
+# MODEL_NAME = "speakleash/Bielik-1.5B-v3"
 # MODEL_NAME = "speakleash/Bielik-4.5B-v3"
+# MODEL_NAME = "DavidAU/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning"
+MODEL_NAME = "unsloth/Qwen3-4B-Instruct-2507"
+# MODEL_NAME = "chohtet/Qwen2.5-7B-Instruct-H3-VLLM"
+# MODEL_NAME = "predibase/Mistral-7B-Instruct-v0.2-medusa-vllm "
+# MODEL_NAME = "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2"
 
 PROMPT = "Explain the benefits of AMD ROCm for large language models."
 CONCURRENCY_LEVELS = [1, 2, 4, 8, 16, 32]
