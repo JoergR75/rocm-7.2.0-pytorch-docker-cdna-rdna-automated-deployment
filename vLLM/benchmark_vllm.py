@@ -21,6 +21,8 @@
 import asyncio
 import argparse
 import os
+import subprocess
+import re
 from vllm import AsyncLLMEngine, SamplingParams
 from vllm.engine.arg_utils import AsyncEngineArgs
 import time
@@ -42,7 +44,7 @@ MODEL_NAME = "unsloth/Qwen3-4B-Instruct-2507"
 
 PROMPT = "Explain the benefits of AMD ROCm for large language models."
 CONCURRENCY_LEVELS = [1, 2, 4, 8, 16, 32]
-GENERATE_TOKENS = 200
+GENERATE_TOKENS = 100
 PROMPT_TOKENS = 128
 
 def parse_args():
@@ -80,16 +82,11 @@ async def run_request(engine, request_id: int):
     }
 
 async def benchmark():
-    # Clear GPU memory
-    torch.cuda.empty_cache()
-    for i in range(torch.cuda.device_count()):
-        torch.cuda.reset_peak_memory_stats(i)
-
     engine_args = AsyncEngineArgs(
         model=MODEL_NAME,
-        dtype="float16",
+        dtype="bfloat16",
         max_model_len=4096,
-        gpu_memory_utilization=0.9,
+        gpu_memory_utilization=0.8,
     )
 
     engine = AsyncLLMEngine.from_engine_args(engine_args)
@@ -137,9 +134,35 @@ async def benchmark():
         "Success Rate",
     ]
 
-    print("\nPyTorch and ROCm version:", torch.__version__)
+    def get_cpu_model():
+        with open("/proc/cpuinfo") as f:
+            for line in f:
+                if "model name" in line:
+                    return line.split(":")[1].strip()
+
+    print("\nInstalled CPU:", get_cpu_model())
+
+    def get_total_memory_gb():
+        with open("/proc/meminfo") as f:
+            for line in f:
+                if line.startswith("MemTotal:"):
+                    # Extract the numeric value in kB
+                    mem_kb = int(re.findall(r'\d+', line)[0])
+                    # Convert to GB (1 GB = 1024^2 kB)
+                    mem_gb = mem_kb / (1024 ** 2)
+                    return f"Total System-Memory: {mem_gb:.0f} GB"
+
+    if __name__ == "__main__":
+        print(get_total_memory_gb())
+
+    device = 0
+    print("Model:", MODEL_NAME)
+    print("PyTorch version:", torch.__version__)
+    print("ROCm version:", subprocess.getoutput("/opt/rocm/bin/hipconfig --version"))
+    print("Is ROCm available:", torch.version.hip is not None)
+    print("Number of GPUs:", torch.cuda.device_count())
     print("GPU Name:", torch.cuda.get_device_name(0) if torch.cuda.device_count() > 0 else "No GPU detected")
-    print("GPU VRAM:", torch.cuda.get_device_properties(0).total_memory / 1e9, "GB")
+    print("Total VRAM:", torch.cuda.get_device_properties(device).total_memory / 1e9, "GB")
     print("\n" + tabulate(table, headers=headers, tablefmt="github"), "\n")
 
 if __name__ == "__main__":
